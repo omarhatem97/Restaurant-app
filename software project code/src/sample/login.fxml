@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <ImageView fitHeight="580.0" fitWidth="708.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@4.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="210.0" layoutY="14.0" prefHeight="57.0" prefWidth="289.0" text="Welcome to Restaurant !" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Myanmar Text Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="176.0" layoutY="77.0" prefHeight="39.0" prefWidth="118.0" text="user name" textAlignment="CENTER" textFill="#dd0b0b">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="176.0" layoutY="116.0" prefHeight="39.0" prefWidth="324.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="176.0" layoutY="155.0" prefHeight="39.0" prefWidth="118.0" text="Password" textAlignment="CENTER" textFill="#dd0b0b">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="176.0" layoutY="194.0" prefHeight="39.0" prefWidth="324.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="loginbut" layoutX="183.0" layoutY="264.0" mnemonicParsing="false" onAction="#login" prefHeight="39.0" prefWidth="111.0" text="LOGIN">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="newclietbut" layoutX="323.0" layoutY="264.0" mnemonicParsing="false" onAction="#newclinet_but" prefHeight="39.0" prefWidth="118.0" text="NEW CLIENT">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="23.0" layoutY="389.0" prefHeight="39.0" prefWidth="600.0" text="*note: If you are a new client please press the NEW CLIENT button" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Accordion />
+   </children>
+</AnchorPane>

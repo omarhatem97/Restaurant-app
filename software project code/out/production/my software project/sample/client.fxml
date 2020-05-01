@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="746.0" prefWidth="1382.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.newclient">
+   <children>
+      <ImageView fitHeight="781.0" fitWidth="1405.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="767.0" layoutY="23.0" text="Enter your name : " textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <TextField layoutX="767.0" layoutY="50.0" prefHeight="26.0" prefWidth="202.0" />
+      <Label layoutX="982.0" layoutY="24.0" text="Enter your phone number : " textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <TextField layoutX="982.0" layoutY="50.0" prefHeight="25.0" prefWidth="216.0" />
+      <Label layoutX="138.0" layoutY="117.0" prefHeight="30.0" prefWidth="81.0" text="Menu" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="client_menu" layoutX="15.0" layoutY="165.0" prefHeight="514.0" prefWidth="901.0" />
+      <Button layoutX="239.0" layoutY="117.0" mnemonicParsing="false" onAction="#set_shoppinglist" prefHeight="25.0" prefWidth="91.0" text="ADD" />
+      <RadioButton fx:id="indoors" layoutX="962.0" layoutY="627.0" mnemonicParsing="false" text="Indoors" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="ordergroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="delivery" layoutX="1061.0" layoutY="628.0" mnemonicParsing="false" text="Delivery" textFill="WHITE" toggleGroup="$ordergroup">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="947.0" layoutY="150.0" prefHeight="30.0" prefWidth="202.0" text="Your shopping list" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="shoppinglist" layoutX="945.0" layoutY="195.0" prefHeight="417.0" prefWidth="384.0" />
+      <Button fx:id="back" layoutX="45.0" layoutY="39.0" mnemonicParsing="false" onAction="#back_login" prefHeight="36.0" prefWidth="133.0" text="BACK" />
+      <Button fx:id="orderbut" layoutX="1149.0" layoutY="150.0" mnemonicParsing="false" onAction="#calc_price" text="ORDER" />
+      <Button fx:id="updatebut" layoutX="356.0" layoutY="117.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="UPDATE" />
+      <Button fx:id="updatebut1" layoutX="1228.0" layoutY="50.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="OK" />
+   </children>
+</AnchorPane>

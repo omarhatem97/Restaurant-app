@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="623.0" prefWidth="1108.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin">
+   <children>
+      <ImageView fitHeight="623.0" fitWidth="1152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1.jpg" />
+         </image>
+      </ImageView>
+      <ListView fx:id="adminlist" layoutX="53.0" layoutY="163.0" prefHeight="450.0" prefWidth="520.0" />
+      <Label layoutX="123.0" layoutY="122.0" text="MENU" textFill="#eaff00">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="575.0" layoutY="14.0" text="*Admins' private page" textFill="#d71818">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="itemname" layoutX="855.0" layoutY="232.0" prefHeight="31.0" prefWidth="217.0" promptText="Add new Item" />
+      <TextField fx:id="itemquantity" layoutX="855.0" layoutY="281.0" prefHeight="31.0" prefWidth="217.0" promptText="Add quantity" />
+      <TextField fx:id="itemprice" layoutX="855.0" layoutY="341.0" prefHeight="31.0" prefWidth="217.0" promptText="Add Price" />
+      <TextField fx:id="itemdesc" layoutX="833.0" layoutY="396.0" prefHeight="57.0" prefWidth="261.0" promptText="Add Description" />
+      <Button fx:id="add" layoutX="903.0" layoutY="488.0" mnemonicParsing="false" onAction="#add" prefHeight="48.0" prefWidth="122.0" text="ADD" />
+      <Label layoutX="885.0" layoutY="182.0" text="ADD new Item" textFill="#fff712">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="42.0" layoutY="27.0" mnemonicParsing="false" onAction="#back_login" prefHeight="34.0" prefWidth="122.0" text="BACK" />
+   </children>
+</AnchorPane>
